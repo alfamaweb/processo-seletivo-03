@@ -1,0 +1,406 @@
+@font-face {
+    font-family:'Circular';
+    src: url('../font/CircularStd-Medium.ttf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    font-family: 'Circular';
+}
+
+/******HEADER*/
+
+.bar {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    margin: 34px 135px;
+
+    .button-to-meet {
+        a{
+            background: #FF6600;
+            color: #fff;
+            
+            padding: 10px 20px;
+
+            text-decoration: none;
+            border-radius: 5px;
+        }
+    }
+}
+
+
+/*******CONTAINER 1 - INFORMATION*/
+.information-container {
+    position: relative;
+    display: flex;
+
+    .social-networks {
+        position: relative;    
+        margin: 30vh 10vw;
+
+        .social-newtorks-list {
+            list-style: none    ;
+        }
+
+
+    }
+
+    .content-container {
+        position: absolute;
+        background: #E6E9ED;
+        width: 85vw;
+        height: 81vh;
+        top: 0;
+        right: 0;
+
+        border-radius: 15px 0px 0px 15px;
+
+        z-index: 1;
+
+        .we-are {
+            display: flex;
+            align-items: center;
+            .orange-trace {
+                position: relative;
+                width: 1.3vw;
+                height: 0.4vh;
+    
+                margin-top: 68px;
+                margin-left: 35px;
+                background-color: #FF6600;
+    
+                border-radius: 5px;
+            }
+
+            p {
+                position: relative;
+
+                margin-top: 60px;
+                margin-left: 5px;
+                color: #042849;
+            }
+
+        }
+
+        .we-are-more {
+            width: 50vw;
+            p {
+                font-size: 30px;
+                color: #042849;
+
+                margin-top: 30px;
+                margin-left: 120px;
+            }
+        }
+
+        .ballon {
+            float: right;
+            margin-top: -105px;
+            margin-right: 100px;
+        }
+
+        .what-we-do {
+            margin-top: 50px;
+            margin-left: 120px;
+            p {
+                margin-top: 15px;
+            }
+        }
+
+        .construtoras {
+            .text-construtoras {
+                margin-top: 55px;
+                margin-left: 126px;
+
+                p{
+                    color: #FF6600;
+                }
+            }
+
+            .exemplos-construtoras {
+                width: 68vw;
+                height: 15vh;
+                background: #fff;
+
+                margin-top: 15px;
+                margin-left: 120px;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                border-radius: 5px;
+                box-shadow: -20px 30px 30px rgba(37, 36, 36, 0.1);
+
+                img {
+                    margin-left: 25px;
+
+                    transition: 0.5s ease-in-out;
+                }
+
+                img:hover {
+                    transform: translateY(-10px);
+                }
+            }
+        }
+    }
+
+    .detail {
+        img {
+            position: absolute;
+            top: 420px;
+            left: 130px;
+
+
+            z-index: 0;
+        }
+    }
+}
+
+
+/****ATENDIMENTO VIA WHATSAPP BAR*/
+.attendance-whatsapp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .bar {
+        position: relative;
+        top: 30px;
+        left: 35px;
+
+        display: flex;
+        align-items: center;
+
+        width: 57vw;
+        height: 12vh;
+    
+            
+        background-color: #FF6600;
+        
+        border-radius: 8px;
+
+        .logo-whatsapp {
+            margin-top: 10px;
+            margin-left: 25px;
+        }
+
+        .text-area{
+            position: relative;
+            left: -620px;
+
+            .text-1 {
+                color: #042849; 
+                font-size: 15px;
+            }
+
+            .text-2 {
+                color: #fff;
+            }
+        }
+    }
+}
+
+/*******NÚMEROS DA ALFAMA*/
+
+main {
+    text-align: center;
+
+    h2 {
+        position: relative;
+        top: 50px;
+
+        color: #042849;
+
+        z-index: 999;
+    }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background-color: #E6E9ED;
+        width: 86vw;
+        height: 240px;
+
+        position: relative;
+        left: 125px;
+
+        border-radius: 10px;
+
+        .cards {
+            position: relative;
+            top: 30px;
+
+            margin: 10px;
+
+            width: 197px;
+            height: 100px;
+
+            background-color: #fff;
+
+            border-radius: 10px;
+
+            text-align: center;
+
+            h4{
+                position: relative;
+                top: 20px;
+                right: 20px;
+
+                color: #042849;
+            }
+
+            .informacoes {
+                display: flex;
+
+                .quantidade {
+                    color: #FF6600;
+                    font-size: 40px;
+
+                    position: relative; 
+                    top: 27px;
+                }
+
+                .indicador {
+                    position: relative;
+                    top: 40px;
+                    left: 50px;
+
+                    height: 20px;
+                }
+
+                p {
+                    position: relative;
+                    top: 37px;
+                    left: 55px;
+
+                    color: #808080;
+
+                    font-size: 12px;
+                    span {
+                        color: #03B072;
+                    }
+                }
+            }
+        }
+
+        .numero-clientes {
+            .informacoes {
+                .quantidade {
+                    left: 6px;
+                }
+            }
+        }
+
+        .numero-projetos {
+            width: 215px;
+
+            .informacoes {
+                .quantidade {
+                    left: 13px;
+                }
+            }
+        }
+
+        .interacao-cv {
+            width: 230px;
+            
+            .informacoes {
+                .quantidade {
+                    left: 20px;
+                }
+            }
+        }
+
+        .construtoras-atendidas {
+            width: 230px;
+
+            .informacoes {
+                .quantidade {
+                    left: 12px;
+                }
+            } 
+        }
+
+        .anos-mercado {
+            .informacoes {
+                .quantidade {
+                    left: 13px;
+                }
+            }
+        }
+    }
+}
+
+
+/*********CONTATO*/
+
+.contact-us {
+
+    margin-top: 40px;
+
+    background: #042849;
+
+        width: 770px;
+        height: 372px;
+
+        border-radius: 10px;
+
+        position: relative;
+        left: 320px;
+
+    .info-inicial {
+        color: white;
+
+        h3 {
+            position: relative;
+            top: 30px;
+            right: 250px;
+        }
+
+        p {
+            position: relative;
+            top: 50px;
+            left: 100px;
+
+            text-align: left;
+
+            width: 550px;
+        }
+    }
+
+    .forms {
+
+        form {
+            text-align: left;
+
+            position: relative;
+            top: 80px;
+            left: 100px;
+        }
+        label {
+            position: relative;
+            bottom: 10px;
+            color: white;
+        }
+
+        .input-field {
+            width: 300px;
+            height: 25px;
+
+            border: 1px solid white;
+            background-color: transparent;
+            border-radius: 5px;
+
+            color: #fff;
+        }
+    }
+}
+
